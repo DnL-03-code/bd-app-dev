@@ -1,5 +1,5 @@
 (function () {
-  const RECOGNIZE_API_URL = '/api/recognize-gesture';
+  const RECOGNIZE_API_URL = 'https://34.158.230.53:8000/api/recognize-gesture';
 
   let overlay = null;
   let overlayText = null;

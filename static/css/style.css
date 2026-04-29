@@ -46,7 +46,7 @@ body {
 .under-map {
   position: absolute;
   inset: 0;
-  background-image: url("/static/backgr.png");
+  background-image: url("../backgr.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -189,14 +189,14 @@ body {
 
 .left {
   left: 0;
-  background-image: url("/static/bg-left.png");
+  background-image: url("../bg-left.png");
   transform-origin: center center;
   border-right: 1px solid rgba(90,55,35,.28);
 }
 
 .right {
   right: 0;
-  background-image: url("/static/bg-right.png");
+  background-image: url("../bg-right.png");
   transform-origin: center center;
   border-left: 1px solid rgba(90,55,35,.28);
 }
