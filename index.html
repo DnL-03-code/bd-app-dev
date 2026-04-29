@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <!-- <link rel="manifest" href="/manifest.json"> -->
+  <meta name="theme-color" content="#ffffff">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Mapa Huncwotów</title>
+
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+  <div class="stage" id="stage">
+    <div class="map">
+      <div class="under-map"></div>
+      <div class="glow"></div>
+      <div class="sparkle"></div>
+
+      <div class="timer-wrap" id="timerWrap">
+        <div class="timer-box">
+          <div class="timer">
+            <div class="time-segment">
+              <span class="time-value" id="days">00</span>
+              <span class="time-label">dni</span>
+            </div>
+
+            <div class="time-segment">
+              <span class="time-value" id="hours">00</span>
+              <span class="time-label">godz.</span>
+            </div>
+
+            <div class="time-segment">
+              <span class="time-value" id="minutes">00</span>
+              <span class="time-label">min.</span>
+            </div>
+
+            <div class="time-segment">
+              <span class="time-value" id="seconds">00</span>
+              <span class="time-label">sek.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel left"></div>
+      <div class="panel right"></div>
+      <div class="crease"></div>
+    </div>
+
+    <button class="hello-icon" id="helloIcon" type="button" aria-label="Otwórz czary"></button>
+
+    <div class="controls">
+      <div class="btn-wrap">
+        <button id="openBtn" class="btn-visible" type="button">
+          Uroczyście oznajmiam, że knuję coś niedobrego
+        </button>
+
+        <button id="closeBtn" class="btn-hidden" type="button">
+          Koniec psot
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay" id="overlay">
+    <button class="overlay-close" id="overlayClose" type="button" aria-label="Zamknij">
+      ×
+    </button>
+
+    <div class="overlay-text" id="overlayText">
+      Noo... machnij...
+    </div>
+
+    <canvas class="gesture-canvas" id="gestureCanvas"></canvas>
+
+    <div class="gesture-hint">
+      Spróbuj narysować: O, OO, W, L albo S
+    </div>
+  </div>
+
+  <script src="/static/js/czary.js"></script>
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
